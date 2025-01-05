@@ -35,6 +35,11 @@ fun RegisterScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
+        AppLogo(
+            modifier = Modifier
+                .padding(16.dp),
+        )
+
         Text(
             text = "Registro de Usuario",
             style = MaterialTheme.typography.headlineMedium

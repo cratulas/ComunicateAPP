@@ -30,6 +30,11 @@ fun ForgotPasswordScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
+        AppLogo(
+            modifier = Modifier
+                .padding(16.dp),
+        )
+
         Text(
             text = "Olvidaste tu contraseña?",
             style = MaterialTheme.typography.headlineMedium

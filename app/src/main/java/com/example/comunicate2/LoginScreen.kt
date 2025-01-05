@@ -26,6 +26,10 @@ fun LoginScreen(navController: NavController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        AppLogo(
+            modifier = Modifier
+                .padding(16.dp),
+        )
 
         Text(
             text = "Inicio de Sesión",
