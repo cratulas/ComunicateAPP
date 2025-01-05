@@ -15,6 +15,8 @@ import androidx.compose.runtime.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.OutlinedTextField
 import android.widget.Toast
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalContext
 
 
@@ -28,8 +30,20 @@ fun RegisterScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(30.dp)
+            .padding(30.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
+
+        Text(
+            text = "Registro de Usuario",
+            style = MaterialTheme.typography.headlineMedium
+        )
+
+        Spacer(modifier = Modifier
+            .height(24.dp))
+
+
         OutlinedTextField(
             value = username,
             onValueChange = { username = it },
