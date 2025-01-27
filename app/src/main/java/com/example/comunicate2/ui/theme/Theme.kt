@@ -7,14 +7,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.graphics.Color
 
-// 🎨 Definimos la nueva paleta de colores accesible
 private val DarkColorScheme = darkColorScheme(
-    primary = Color(0xFF00796B),  // Verde Teal Oscuro
-    primaryContainer = Color(0xFF004D40), // Variante más oscura
-    secondary = Color(0xFF4DB6AC),  // Verde Teal Claro
-    background = Color(0xFF121212), // Fondo oscuro accesible
-    surface = Color(0xFF1E1E1E), // Superficie oscura para tarjetas
-    error = Color(0xFFD32F2F), // Rojo accesible para errores
+    primary = Color(0xFF00796B),
+    primaryContainer = Color(0xFF004D40),
+    secondary = Color(0xFF4DB6AC),
+    background = Color(0xFF121212),
+    surface = Color(0xFF1E1E1E),
+    error = Color(0xFFD32F2F),
     onPrimary = Color.White,
     onSecondary = Color.Black,
     onBackground = Color.White,
@@ -22,12 +21,12 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Color(0xFF00796B),  // Verde Teal Oscuro
-    primaryContainer = Color(0xFF004D40), // Variante más oscura
-    secondary = Color(0xFF4DB6AC),  // Verde Teal Claro
-    background = Color(0xFFE0F2F1), // Fondo claro
-    surface = Color.White, // Superficie clara
-    error = Color(0xFFD32F2F), // Rojo accesible para errores
+    primary = Color(0xFF00796B),
+    primaryContainer = Color(0xFF004D40),
+    secondary = Color(0xFF4DB6AC),
+    background = Color(0xFFE0F2F1),
+    surface = Color.White,
+    error = Color(0xFFD32F2F), 
     onPrimary = Color.White,
     onSecondary = Color.Black,
     onBackground = Color.Black,
