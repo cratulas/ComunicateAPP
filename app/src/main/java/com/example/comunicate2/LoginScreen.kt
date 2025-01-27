@@ -28,9 +28,13 @@ fun LoginScreen(navController: NavController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+
+        AnimacionLottie()
+
+
         AppLogo(
             modifier = Modifier
-                .padding(16.dp),
+                .padding(10.dp),
         )
 
         Text(
@@ -132,5 +136,6 @@ fun LoginScreen(navController: NavController) {
         ) {
             Text("Olvidé mi contraseña")
         }
+
     }
 }

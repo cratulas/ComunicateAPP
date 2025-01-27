@@ -14,6 +14,6 @@ fun AppLogo(
     Image(
         painter = painterResource(id = R.drawable.logo),
         contentDescription = "Logo de la aplicación",
-        modifier = modifier.size(150.dp)
+        modifier = modifier.size(200.dp)
     )
 }

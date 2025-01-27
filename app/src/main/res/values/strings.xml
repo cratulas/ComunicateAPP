@@ -6,4 +6,6 @@
     <string name="title_activity_register_screen">RegisterScreen</string>
     <string name="title_activity_user_data">UserData</string>
     <string name="title_activity_app_logo">AppLogo</string>
+    <string name="title_activity_animacion">animacion</string>
+    <string name="title_activity_animacion_screen">AnimacionScreen</string>
 </resources>
