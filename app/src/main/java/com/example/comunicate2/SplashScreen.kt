@@ -23,7 +23,7 @@ fun SplashScreen(navController: NavController) {
     )
 
     val scaleAnim = animateFloatAsState(
-        targetValue = if (startAnimation) 1f else 0.6f, 
+        targetValue = if (startAnimation) 1f else 0.6f,
         animationSpec = tween(durationMillis = 1500, easing = EaseOutExpo)
     )
 
