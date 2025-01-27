@@ -14,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 
 
 object Routes {
+    const val SPLASH = "splash"
     const val HOME = "home"
     const val LOGIN = "login"
     const val REGISTER = "register"
@@ -41,8 +42,11 @@ fun AppNavigation() {
 
     NavHost(
         navController = navController,
-        startDestination = Routes.LOGIN
+        startDestination = Routes.SPLASH
     ) {
+        composable(Routes.SPLASH) {
+            SplashScreen(navController)
+        }
         composable(Routes.HOME) {
             HomeScreen(navController)
         }

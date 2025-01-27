@@ -13,6 +13,16 @@
         android:theme="@style/Theme.Comunicate2"
         tools:targetApi="31">
         <activity
+            android:name=".SplashScreen"
+            android:exported="false"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/Theme.Comunicate2" />
+        <activity
+            android:name=".SplashScreen.kt"
+            android:exported="false"
+            android:label="@string/title_activity_splash_screen.kt"
+            android:theme="@style/Theme.Comunicate2" />
+        <activity
             android:name=".AnimacionScreen"
             android:exported="false"
             android:label="@string/title_activity_animacion_screen"

@@ -29,9 +29,6 @@ fun LoginScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
-        AnimacionLottie()
-
-
         AppLogo(
             modifier = Modifier
                 .padding(10.dp),

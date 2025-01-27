@@ -61,8 +61,7 @@ fun ForgotPasswordScreen(navController: NavController) {
 
         Button(
             onClick = {
-                if (username.isNotEmpty()
-                ){
+                if (username.isNotEmpty()) {
                     val user = UserData.users.find { it.username == username }
                     if (user != null) {
                         Toast.makeText(
@@ -75,17 +74,16 @@ fun ForgotPasswordScreen(navController: NavController) {
                     } else {
                         message = "Usuario no encontrado."
                     }
-                }else{
+                } else {
                     message = "Ingresa un nombre de usuario."
                 }
-
-
             },
-            modifier = Modifier
-                .fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            enabled = username.isNotEmpty()
         ) {
             Text("Recuperar Contraseña")
         }
+
 
         Spacer(modifier = Modifier
             .height(16.dp))

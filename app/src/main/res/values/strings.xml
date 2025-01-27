@@ -8,4 +8,6 @@
     <string name="title_activity_app_logo">AppLogo</string>
     <string name="title_activity_animacion">animacion</string>
     <string name="title_activity_animacion_screen">AnimacionScreen</string>
+    <string name="title_activity_splash_screen.kt">SplashScreen.kt</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
 </resources>
