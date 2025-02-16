@@ -24,14 +24,12 @@ import java.util.Locale
 
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable
-fun HomeScreen(navController: NavController, viewModel: CityViewModel = viewModel()) {
+fun HomeScreen(navController: NavController, authViewModel: AuthViewModel = viewModel(), viewModel: CityViewModel = viewModel()) {
     val context = LocalContext.current
     val locationPermissionState = rememberPermissionState(Manifest.permission.ACCESS_FINE_LOCATION)
     val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.construccion))
     val progress by animateLottieCompositionAsState(composition = composition)
 
-
-    // Permiso de ubicacion
     LaunchedEffect(Unit) {
         if (!locationPermissionState.status.isGranted) {
             locationPermissionState.launchPermissionRequest()
@@ -75,8 +73,7 @@ fun HomeScreen(navController: NavController, viewModel: CityViewModel = viewMode
         LottieAnimation(
             composition = composition,
             progress = { progress },
-            modifier = Modifier
-                .size(250.dp)
+            modifier = Modifier.size(250.dp)
         )
 
         Spacer(modifier = Modifier.height(24.dp))
@@ -124,8 +121,10 @@ fun HomeScreen(navController: NavController, viewModel: CityViewModel = viewMode
 
         Button(
             onClick = {
-                navController.navigate(Routes.LOGIN) {
-                    popUpTo(Routes.LOGIN) { inclusive = true }
+                authViewModel.logoutUser {
+                    navController.navigate(Routes.LOGIN) {
+                        popUpTo(Routes.LOGIN) { inclusive = true }
+                    }
                 }
             },
             modifier = Modifier
@@ -140,7 +139,6 @@ fun HomeScreen(navController: NavController, viewModel: CityViewModel = viewMode
         }
     }
 }
-
 
 class CityViewModel : ViewModel() {
     var cityName = mutableStateOf("Obteniendo ubicación...")
