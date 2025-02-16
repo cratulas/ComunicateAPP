@@ -22,6 +22,7 @@ object Routes {
     const val MAP = "map"
     const val SPEECH_TO_TEXT = "speech_to_text"
     const val SAVED_TEXTS = "saved_texts"
+    const val TEXT_TO_SPEECH = "text_to_speech"
 
 }
 
@@ -70,6 +71,9 @@ fun AppNavigation() {
         }
         composable(Routes.SAVED_TEXTS) {
             SavedTextsScreen(navController)
+        }
+        composable(Routes.TEXT_TO_SPEECH) {
+            TextToSpeechScreen(navController)
         }
 
     }

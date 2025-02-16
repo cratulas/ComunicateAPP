@@ -106,6 +106,19 @@ fun HomeScreen(navController: NavController, authViewModel: AuthViewModel = view
 
 
         Button(
+            onClick = { navController.navigate(Routes.TEXT_TO_SPEECH) },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 32.dp)
+                .height(56.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+        ) {
+            Text("Texto a Voz", fontSize = 18.sp)
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Button(
             onClick = { navController.navigate(Routes.MAP) },
             modifier = Modifier
                 .fillMaxWidth()
@@ -138,6 +151,8 @@ fun HomeScreen(navController: NavController, authViewModel: AuthViewModel = view
         ) {
             Text("Cerrar Sesión", fontSize = 18.sp)
         }
+
+
     }
 }
 
