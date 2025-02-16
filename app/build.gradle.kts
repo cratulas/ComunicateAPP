@@ -58,6 +58,7 @@ dependencies {
     implementation("com.google.android.gms:play-services-location:21.0.1")
     implementation("com.google.maps.android:maps-compose:2.11.4")
     implementation("com.google.accompanist:accompanist-permissions:0.31.1-alpha")
+    implementation("androidx.activity:activity-ktx:1.7.2")
     implementation(libs.firebase.database)
     implementation(libs.firebase.auth)
     testImplementation(libs.junit)

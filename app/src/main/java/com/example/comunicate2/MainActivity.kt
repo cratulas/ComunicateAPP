@@ -20,6 +20,8 @@ object Routes {
     const val REGISTER = "register"
     const val FORGOT_PASSWORD = "forgotPassword"
     const val MAP = "map"
+    const val SPEECH_TO_TEXT = "speech_to_text"
+    const val SAVED_TEXTS = "saved_texts"
 
 }
 
@@ -63,5 +65,12 @@ fun AppNavigation() {
         composable(Routes.MAP) {
             MapScreen(navController)
         }
+        composable(Routes.SPEECH_TO_TEXT) {
+            SpeechToTextScreen(navController)
+        }
+        composable(Routes.SAVED_TEXTS) {
+            SavedTextsScreen(navController)
+        }
+
     }
 }

@@ -1,11 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- Permisos -->
+
+    <!-- 📌 Permisos requeridos -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -18,11 +21,12 @@
         android:theme="@style/Theme.Comunicate2"
         tools:targetApi="31">
 
-        <!-- API Key de Google Maps -->
+        <!-- 🔹 API Key de Google Maps -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAQkOACFbBNQ5165VLb-nk50RA_BUXx6dY" />
 
+        <!-- 🔹 MainActivity (Punto de entrada de la app) -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -32,5 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 </manifest>

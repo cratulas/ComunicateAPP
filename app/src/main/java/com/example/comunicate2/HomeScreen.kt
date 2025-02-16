@@ -76,33 +76,34 @@ fun HomeScreen(navController: NavController, authViewModel: AuthViewModel = view
             modifier = Modifier.size(250.dp)
         )
 
-        Spacer(modifier = Modifier.height(24.dp))
-
-        Text(
-            text = "¡Bienvenido a la pantalla principal!\nPronto tendremos novedades para ti.",
-            style = MaterialTheme.typography.headlineMedium,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-            fontSize = 22.sp
-        )
-
         Spacer(modifier = Modifier.height(16.dp))
 
         Button(
-            onClick = { /* Implementar próximamente */ },
+            onClick = { navController.navigate(Routes.SPEECH_TO_TEXT) },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 32.dp)
                 .height(56.dp),
-            colors = ButtonDefaults.buttonColors(
-                containerColor = MaterialTheme.colorScheme.primary
-            ),
-            enabled = false
+            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
         ) {
-            Text("Explorar Novedades", fontSize = 18.sp)
+            Text("Reconocimiento de Voz", fontSize = 18.sp)
         }
 
         Spacer(modifier = Modifier.height(16.dp))
+
+        Button(
+            onClick = { navController.navigate(Routes.SAVED_TEXTS) },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 32.dp)
+                .height(56.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+        ) {
+            Text("Ver Textos Guardados", fontSize = 18.sp)
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
 
         Button(
             onClick = { navController.navigate(Routes.MAP) },

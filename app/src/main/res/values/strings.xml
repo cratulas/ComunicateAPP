@@ -13,4 +13,10 @@
     <string name="title_activity_map_screen">MapScreen</string>
     <string name="title_activity_location_view_model">LocationViewModel</string>
     <string name="title_activity_auth_view_mode">AuthViewMode</string>
+    <string name="title_activity_speech_view_model">SpeechViewModel</string>
+    <string name="title_activity_speech_screen">SpeechScreen</string>
+    <string name="title_activity_view_texts_screen">ViewTextsScreen</string>
+    <string name="title_activity_speech_to_text_view_model">SpeechToTextViewModel</string>
+    <string name="title_activity_speech_to_text_screen">SpeechToTextScreen</string>
+    <string name="title_activity_saved_texts_screen">SavedTextsScreen</string>
 </resources>
