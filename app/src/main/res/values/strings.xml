@@ -10,4 +10,6 @@
     <string name="title_activity_animacion_screen">AnimacionScreen</string>
     <string name="title_activity_splash_screen.kt">SplashScreen.kt</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_map_screen">MapScreen</string>
+    <string name="title_activity_location_view_model">LocationViewModel</string>
 </resources>

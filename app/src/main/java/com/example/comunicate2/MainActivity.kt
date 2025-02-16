@@ -19,6 +19,7 @@ object Routes {
     const val LOGIN = "login"
     const val REGISTER = "register"
     const val FORGOT_PASSWORD = "forgotPassword"
+    const val MAP = "map"
 
 }
 
@@ -58,6 +59,9 @@ fun AppNavigation() {
         }
         composable(Routes.FORGOT_PASSWORD) {
             ForgotPasswordScreen(navController)
+        }
+        composable(Routes.MAP) {
+            MapScreen(navController)
         }
     }
 }

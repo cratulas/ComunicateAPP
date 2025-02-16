@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permisos -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,61 +19,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Comunicate2"
         tools:targetApi="31">
-        <activity
-            android:name=".SplashScreen"
-            android:exported="false"
-            android:label="@string/title_activity_splash_screen"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".SplashScreen.kt"
-            android:exported="false"
-            android:label="@string/title_activity_splash_screen.kt"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".AnimacionScreen"
-            android:exported="false"
-            android:label="@string/title_activity_animacion_screen"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".Animacion"
-            android:exported="false"
-            android:label="@string/title_activity_animacion"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".animacion"
-            android:exported="false"
-            android:label="@string/title_activity_animacion"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".AppLogo"
-            android:exported="false"
-            android:label="@string/title_activity_app_logo"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".UserData"
-            android:exported="false"
-            android:label="@string/title_activity_user_data"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".RegisterScreen"
-            android:exported="false"
-            android:label="@string/title_activity_register_screen"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".LoginScreen"
-            android:exported="false"
-            android:label="@string/title_activity_login_screen"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".HomeScreen"
-            android:exported="false"
-            android:label="@string/title_activity_home_screen"
-            android:theme="@style/Theme.Comunicate2" />
-        <activity
-            android:name=".ForgotPasswordScreen"
-            android:exported="false"
-            android:label="@string/title_activity_forgot_password_screen"
-            android:theme="@style/Theme.Comunicate2" />
+
+        <!--  API Key de Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAQkOACFbBNQ5165VLb-nk50RA_BUXx6dY"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -74,10 +32,8 @@
             android:theme="@style/Theme.Comunicate2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
