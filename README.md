@@ -13,6 +13,7 @@
 - ✅ **Interfaz Adaptada a Accesibilidad**: Diseñada con principios de accesibilidad para facilitar su uso.
 - ✅ **Animaciones con LOTTIE**: Uso de plataforma externa Lottie para animaciones.
 
+
 ---
 
 ## 🛠️ Tecnologías Utilizadas
@@ -22,6 +23,8 @@
 - 📌 **Navegación**: Jetpack Navigation
 - 📌 **Animaciones**: Lottie para animaciones interactivas
 - 📌 **Material Design**: Para una UI moderna y responsiva
+- 📌 **Firebase**: Para Autenticación y Base de Datos
+
 
 ---
 
@@ -37,8 +40,8 @@ Antes de ejecutar la app, asegúrate de tener instalado:
   - git clone https://github.com/cratulas/ComunicateAPP.git
   - cd comunicate
 2. Usuarios predefinidos para el inicio de sesión
-  -  User("usuario1", password: "1234", email: "correo1@gmail.com")
-  -  User("usuario2", password: "abcd", email: "correo2@gmail.com")
-  -  User("usuario3", password: "efgh", email: "correo2@gmail.com")
-  -  User("usuario4", password: "5678", email: "correo2@gmail.com")
-  -  User("usuario5", password: "hola", email: "correo3@gmail.com")
+  -  User: usuario1@gmail.com, password: "123456"
+  -  User: usuario2@gmail.com, password: "123456"
+  -  User: usuario3@gmail.com, password: "123456"
+  -  User: usuario4@gmail.com, password: "123456"
+  -  User: usuario5@gmail.com, password: "123456"
